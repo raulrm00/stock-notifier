@@ -1,0 +1,16 @@
+{
+  "name": "next-gen-stock-notifier",
+  "version": "1.0.0",
+  "description": "A simple stock notifier",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "raulrm00",
+  "license": "MIT",
+  "dependencies": {
+    "playwright": "1.23.1"
+  }
+}
