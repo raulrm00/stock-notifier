@@ -18,4 +18,4 @@ console.log()
 
 app(websites)
 
-setInterval(async () => app(websites), 1000 * 60 * 10) // every 10 minutes
+setInterval(async () => app(websites), 1000 * 60 * 5) // every 5 minutes
