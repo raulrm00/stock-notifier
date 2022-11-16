@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "colors": "1.4.0",
+    "node-notifier": "10.0.1",
     "playwright": "1.23.1"
   }
 }
