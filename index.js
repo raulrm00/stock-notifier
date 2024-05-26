@@ -2,18 +2,7 @@ const colors = require('colors/safe')
 const websites = require('./websites')
 const app = require('./lib/app')
 
-console.log(websites)
-console.log()
-
-console.log('Searching stock in online stores ...')
-console.log('-------------------------------------')
-
-const stores = websites.reduce((storeNames, website) => {
-  if (storeNames.includes(website.name)) return storeNames
-  return storeNames.concat(website.name)
-}, [])
-
-console.log(`${colors.blue('\t*')} ${stores.join(colors.blue('\n\t* '))}`)
+console.table(websites, ['type', 'name', 'url'])
 console.log()
 
 app(websites)
