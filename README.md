@@ -1,5 +1,7 @@
 # Stock Notifier
 
+![example](docs/example.webp)
+
 ## Description
 
 The Stock Notifier is a terminal application that allows users to search for specific items and receive desktop notifications when those items are available. It provides a convenient way to stay updated on stock availability without constantly checking websites manually.
