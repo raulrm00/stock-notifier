@@ -1,4 +1,3 @@
-const colors = require('colors/safe')
 const websites = require('./websites')
 const app = require('./lib/app')
 
