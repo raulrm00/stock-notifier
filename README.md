@@ -14,18 +14,17 @@ The Stock Notifier is a terminal application that allows users to search for spe
 
 1. Clone the repository.
 2. Install the dependencies.
-   - `npm install`
+
+```sh
+npm install
+```
+
 3. Modify `websites.json` with desired [configuration](#configuration).
 4. Run the application.
-
-<details open>
-    <summary>npm</summary>
 
 ```sh
 npm run start
 ```
-
-</details>
 
 ## Configuration
 
@@ -49,6 +48,7 @@ The `websites.json` file contains the configuration for the application. The fil
 - `url`: The URL of the website.
 - `selector`: CSS selector of the item to search (ex. add to cart button).
 - `content`: The interval in seconds between searches.
+- `notify`: If _true_ sends desktop notification when an item is available
 
 ## License
 
