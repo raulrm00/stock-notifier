@@ -1,9 +1,15 @@
-const websites = require('./websites')
+const settings = require('./settings')
 const app = require('./lib/app')
 
-console.table(websites, ['type', 'name', 'url'])
-console.log()
+const { interval, items } = settings
 
-app(websites)
+function main() {
+  console.clear()
+  console.table(items, ['type', 'name', 'url'])
+  console.log()
+  app(settings)
+}
 
-setInterval(async () => app(websites), 1000 * 60 * 5) // every 5 minutes
+setInterval(async () => main(), 1000 * interval)
+
+main()

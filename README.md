@@ -21,7 +21,7 @@ The Stock Notifier is a terminal application that allows users to search for spe
 npm install
 ```
 
-3. Modify `websites.json` with desired [configuration](#configuration).
+3. Modify `settings.json` with desired [configuration](#configuration).
 4. Run the application.
 
 ```sh
@@ -30,27 +30,34 @@ npm run start
 
 ## Configuration
 
-The `websites.json` file contains the configuration for the application. The file is structured as follows:
+The `settings.json` file contains the configuration for the application. The file is structured as follows:
 
 ```json
-[
-  {
-    "name": "Example",
-    "type": "example-type",
-    "url": "https://example.com",
-    "selector": "#id",
-    "content": "Example text",
-    "notify": true
-  }
-]
+{
+  "enableNotifications": true,
+  "interval": 300,
+  "items": [
+    {
+      "name": "Example",
+      "type": "example-type",
+      "url": "https://example.com",
+      "selector": "#id",
+      "content": "Example text",
+      "notify": true
+    }
+  ]
+}
 ```
 
-- `name`: The name of the item.
-- `type`: Some groupable type for display purposes.
-- `url`: The URL of the website.
-- `selector`: CSS selector of the item to search (ex. add to cart button).
-- `content`: The interval in seconds between searches.
-- `notify`: If _true_ sends desktop notification when an item is available
+- `enableNotifications`: Enable desktop notifications
+- `interval`: Search interval (in seconds)
+- `items`
+  - `name`: The name of the item.
+  - `type`: Some groupable type for display purposes.
+  - `url`: The URL of the item.
+  - `selector`: CSS selector of the item to search (ex. add to cart button).
+  - `content`: The interval in seconds between searches.
+  - `notify`: If _true_ sends desktop notification when an item is available
 
 ## License
 
